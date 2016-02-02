@@ -1,0 +1,41 @@
+.dropdown {
+  padding: 14px 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.dropdown__menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  Left: 0;
+  padding: 5px 0px;
+  transition: opacity 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown,
+.dropdown__menu {
+  box-shadow: 0 0 0.1em black;
+  background: grey;
+  cursor: pointer;
+  margin: 0px;
+  width: 140px;
+}
+
+.dropdown__menu--sub {
+  left: 140px;
+  top: 0px;
+}
+
+.dropdown__menu--hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__item--hover,
+.dropdown--hover {
+  background: orange;
+}
